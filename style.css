@@ -35,3 +35,12 @@
 .demo-banner a:hover,.demo-banner a:focus-visible{color:#d6f16a}
 .social-pending{display:inline-flex;align-items:center;padding:10px 12px;border:1px dashed currentColor;border-radius:3px;opacity:.75;font-size:13px}
 @media(max-width:600px){.demo-banner{padding:11px 5%;gap:3px;flex-direction:column}.demo-banner span{font-size:12px}}
+
+/* Version 4.2 — compact mobile shortcuts for smaller phones */
+@media (max-width:850px) {
+  .mobile-actions { gap:8px; padding:9px 5% 11px; }
+  .mobile-actions a { min-height:54px; padding:6px 5px; gap:3px; line-height:1.15; }
+  .mobile-actions a > span { font-size:inherit; }
+  .mobile-actions a[aria-current="page"] { background:var(--lime); border-color:#8daa45; box-shadow:inset 0 0 0 1px #8daa45; }
+  .site-header nav a[aria-current="page"] { background:#e7ebd9; text-decoration:underline; text-underline-offset:4px; }
+}
